@@ -12,15 +12,8 @@ MESSAGE_LOG = "message_log.txt"
 
 # Function to check if model is fully downloaded
 def is_model_downloaded(model_dir):
-    required_files = ["config.json", "pytorch_model.bin", "tokenizer_config.json", "vocab.json"]
+    required_files = ["config.json", "pytorch_model.bin", "toikenizer_config.json", "vocab.json"]
     return all(os.path.exists(os.path.join(model_dir, file)) for file in required_files)
-
-# Function to force re-download the model if needed
-def force_redownload_model():
-    if os.path.exists(MODEL_DIR):
-        print(f"Deleting the existing model directory at {MODEL_DIR}...")
-        shutil.rmtree(MODEL_DIR)
-        print("Model directory deleted.")
 
 # Function to log messages to a file
 def log_message(message):
@@ -32,10 +25,7 @@ os.makedirs(MODEL_DIR, exist_ok=True)
 
 # Download the model if not already downloaded
 if not is_model_downloaded(MODEL_DIR):
-    # Optionally delete the directory if forcing a re-download
-    force_redownload_model()
-
-    print(f"Downloading model from {MODEL_NAME}...")
+    print(f"Model not found locally. Downloading model from {MODEL_NAME}...")
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     model = pipeline("text-generation", model=MODEL_NAME, tokenizer=tokenizer)
 
