@@ -47,7 +47,6 @@ Clone this repo:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/machine-learning-algorithms.git
 Install dependencies:
 
 bash
@@ -64,6 +63,4 @@ Feel free to use, learn, and contribute!
 I’m a passionate developer exploring data science, machine learning, and AI.
 Let’s connect and learn together!
 
-🔗 LinkedIn
-🐦 Twitter
-🌐 Portfolio
+🔗 LinkedIn 
