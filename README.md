@@ -32,23 +32,38 @@ Here, I explore and implement various ML algorithms from scratch and using popul
 - PyTorch 🔥
 
 ---
+🧠 Goals
+✅ Practice and understand core ML algorithms
 
-## 📁 Repository Structure
+✅ Implement algorithms manually and with libraries
 
-```bash
-📂 machine-learning-algorithms/
-│
-├── 📁 linear_regression/
-│   └── linear_regression.py
-│
-├── 📁 decision_tree/
-│   └── decision_tree_classifier.py
-│
-├── 📁 knn/
-│   └── knn_classifier.py
-│
-├── 📁 datasets/
-│   └── sample_dataset.csv
-│
-├── 📄 requirements.txt
-└── 📄 README.md
+✅ Visualize model performance
+
+✅ Work with real-world datasets
+
+📌 How to Use
+Clone this repo:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/machine-learning-algorithms.git
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run any algorithm script from its folder.
+
+📝 License
+This project is licensed under the MIT License.
+Feel free to use, learn, and contribute!
+
+🙋‍♂️ About Me
+I’m a passionate developer exploring data science, machine learning, and AI.
+Let’s connect and learn together!
+
+🔗 LinkedIn
+🐦 Twitter
+🌐 Portfolio
